@@ -1,0 +1,14 @@
+version: '3'
+services:
+ 
+ akaunting:
+    image: kuralabs/docker-akaunting:latest
+    restart: always
+    ports:
+      - 8111:8080
+    environment:
+      MYSQL_ROOT_PASSWORD: y48vO^czdK5
+    volumes:
+      - /srv/akaunting/mysql:/var/lib/mysql
+      - /srv/akaunting/logs:/var/log
+      - /srv/akaunting/config:/var/www/akaunting/config
