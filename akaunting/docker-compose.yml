@@ -7,7 +7,7 @@ services:
     ports:
       - 8111:8080
     environment:
-      MYSQL_ROOT_PASSWORD: y48vO^czdK5
+      MYSQL_ROOT_PASSWORD: 
     volumes:
       - /srv/akaunting/mysql:/var/lib/mysql
       - /srv/akaunting/logs:/var/log
